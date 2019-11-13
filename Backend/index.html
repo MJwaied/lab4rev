@@ -1,0 +1,68 @@
+<htnl>
+    <head>
+        <meta charset = 'utf-8'>
+    </head>
+    
+    <body>
+        <h1> Librarian</h1>
+        <div>
+            <h2>Add</h2>
+            <form method = 'post' action ='/'>
+                Name: <input name = 'name' type = 'text'/>
+                Type: <input name = 'type' type = 'text'/>
+                Loan Period: <input name = 'loanPeriod' type = 'text'/>
+                <button type = 'submit'>Create </button>
+            </form>
+        </div>
+        
+           <div>
+            <h2>Update quantity</h2>
+               <!-- THIS SHOULD BE DONE USING PUT !-->
+            <form method = 'post' action ='/update'>
+                Name: <input name = 'name' type = 'text'/>
+                Quantity: <input name = 'quantity' type = 'text'/>
+                <button type = 'submit'>Update </button>
+            </form>
+        </div>
+        
+        <div>
+            <h2>Update Loan Period</h2>
+               <!-- THIS SHOULD BE DONE USING PUT !-->
+            <form method = 'post' action ='/period'>
+                Name: <input name = 'name' type = 'text'/>
+                Loan Period: <input name = 'loanPeriod' type = 'text'/>
+                <button type = 'submit'>Update </button>
+            </form>
+        </div>
+        
+        <div>
+            <h2>Delete</h2>
+               <!-- THIS SHOULD BE DONE USING DELETE !-->
+            <form method = 'post' action ='/delete'>
+                Name: <input name = 'name' type = 'text'/>
+                <button type = 'submit'>Delete </button>
+            </form>
+        </div>
+        
+        
+        <div>
+            <h2>Get quantity, type and loan period </h2>
+               <!-- THIS SHOULD BE DONE USING DELETE !-->
+            <form method = 'post' action ='/product'>
+                Name: <input name = 'name' type = 'text'/>
+                <button type = 'submit'>Get </button>
+            </form>
+        </div>
+        
+         <div>
+            <h2>Get All</h2>
+               <!-- THIS SHOULD BE DONE USING DELETE !-->
+            <form method = 'get' action ='/products'>
+                <button type = 'submit'>Get All </button>
+            </form>
+        </div>
+        
+    </body>
+    
+
+</html>
