@@ -4,15 +4,10 @@ var app = express();
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-var Product = require('./models/product.model.js');
+var Product = require('./product.model');
 
 const { check, validationResult } = require('express-validator');
-
-// serve files in static' folder at root URL '/views'
-app.use('/', express.static('./'));
 app.use(urlencodedParser);
-
-
 
 app.post('/', [
   check('name').isLength({ min: 2 }).trim().escape(),check('type').isLength({ min: 2 }).trim().escape(),
@@ -87,5 +82,7 @@ app.post('/product',function(req,res,next){
      });
 
 });
+const port = 8081
 
-app.listen(8080); // start server
+app.listen(port, () => {
+    console.log("Server is running on port " + port)});
