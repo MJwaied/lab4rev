@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  background: #eee;
+  padding: 1em;
+  margin-right: 10px;
+  width: 20%;
+  height: 200px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+ul li p {
+  margin: 0;
+}
+

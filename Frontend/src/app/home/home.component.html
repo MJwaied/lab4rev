@@ -1,1 +1,11 @@
-<p>home works!</p>
+<h1>Product List</h1>
+
+<ul *ngIf="products">
+  <li *ngFor="let product of products">
+    <p class="name">{{ product.name }}</p>
+    <p class="type">{{ product.type }}</p>
+    <p class="loanPeriod">{{ product.loanPeriod }}</p>
+    <p class="quantity">{{ product.quantity }}</p>
+
+  </li>
+</ul>

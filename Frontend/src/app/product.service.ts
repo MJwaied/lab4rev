@@ -5,9 +5,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductService {
-  uri = 'http://localhost:8081';
+
   constructor(private http: HttpClient) { }
   fetchProducts() {
-    return this.http.get(`${this.uri}/products`);
+    return this.http.get('/products');
   }
 }
